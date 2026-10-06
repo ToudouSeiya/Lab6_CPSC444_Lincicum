@@ -70,6 +70,8 @@ scene.add(
 // Camera Position
 camera.position.z = 3;
 
+let theta = 0;
+
 // Animation Loop
 function animate()
 {
@@ -77,8 +79,16 @@ function animate()
         animate
     );
 
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
+    cube.rotation.x += 0.02;
+    cube.rotation.y += 0.02;
+
+    theta += 1;
+
+    let r = Math.abs(Math.sin(theta * 0.02));
+    let g = Math.abs(Math.sin(theta * 0.03));
+    let b = Math.abs(Math.sin(theta * 0.04));
+
+    directionalLight.color.setRGB(r, g, b);
 
     renderer.render(
         scene,
