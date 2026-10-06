@@ -195,7 +195,12 @@ scene.add(
 Questions:
 
 1. How is a point light different from a directional light?
+
+A: Unlike the directional light, the point light has a maximum distance that it eminates from. Additionally, it creates highlights on faces rather than lighting whole faces.
+
 2. Which resembles a light bulb?
+
+A: The point light.
 
 ---
 

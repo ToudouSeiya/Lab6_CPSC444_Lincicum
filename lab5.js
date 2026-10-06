@@ -70,6 +70,18 @@ scene.add(
     directionalLight
 );
 
+//Point Light
+const pointLight =
+new THREE.PointLight(0xffffff, 5, 0);
+pointLight.position.set(2, 2, 0);
+scene.add(pointLight);
+
+//Second Point Light
+const pointLight2 =
+new THREE.PointLight(0xff0000, 5, 0);
+pointLight2.position.set(-2, -2, 0);
+scene.add(pointLight2);
+
 // Camera Position
 camera.position.z = 3;
 
