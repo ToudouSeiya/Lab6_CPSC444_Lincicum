@@ -1,3 +1,6 @@
+//Morgan Lincicum
+//CPSC444 Lab 6
+
 import * as THREE from
 'https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.module.js';
 
@@ -53,7 +56,7 @@ scene.add(ambientLight);
 // Single Directional Light
 const directionalLight =
     new THREE.DirectionalLight(
-        0x00ff00,
+        0xff00ff,
         1.0
     );
 
@@ -88,7 +91,7 @@ function animate()
     let g = Math.abs(Math.sin(theta * 0.03));
     let b = Math.abs(Math.sin(theta * 0.04));
 
-    directionalLight.color.setRGB(r, g, b);
+    //directionalLight.color.setRGB(r, g, b);
 
     renderer.render(
         scene,
