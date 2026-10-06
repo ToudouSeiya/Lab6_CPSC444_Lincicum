@@ -53,7 +53,12 @@ Experiment with:
 Questions:
 
 1. What is ambient light?
+
+A: Ambient light is a baseline light that illuminates every object in a scene.
+
 2. What happens when ambient light increases?
+
+A: When ambient light increases, the whole cube gets brighter.
 
 ---
 
@@ -81,7 +86,12 @@ Try:
 Questions:
 
 1. Which faces become brighter?
+
+A: The faces that are closest to the directional light.
+
 2. Why?
+
+A: The directional light, as the name implies, has a direction to it. Unlike the ambient light that lights all of the faces of an object, only the faces being hit by the directional light become brighter.
 
 ---
 
@@ -116,7 +126,12 @@ Yellow
 Questions:
 
 1. Which color has highest contrast?
+
+A: In my opinion (and with my computer screen), the green light had the highest contrast. 
+
 2. Why do shadows remain dark?
+
+A: Shadows occur where there isn't light hitting the object, therefore the color of the light does not affect them.
 
 ---
 
@@ -127,7 +142,12 @@ Observe the moving light source.
 Questions:
 
 1. Why do highlights move?
+
+A: As described above, the directional light only lights the faces of the object that are facing the directional light. As the light moves, the faces that are in the path of the directional light changes.
+
 2. Why does the cube appear different as it rotates?
+
+A: Because of the combination of the cube rotating and the light moving, different faces are being hit by the light at any given moment and changing the appearance of the cube.
 
 ---
 

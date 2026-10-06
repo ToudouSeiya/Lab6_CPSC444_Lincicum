@@ -45,17 +45,22 @@ const cube =
 
 scene.add(cube);
 
+//Ambient Light
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.2);
+
+scene.add(ambientLight);
+
 // Single Directional Light
 const directionalLight =
     new THREE.DirectionalLight(
-        0xffffff,
+        0x00ff00,
         1.0
     );
 
 directionalLight.position.set(
-    1,
-    1,
-    1
+    0,
+    -1,
+    0
 );
 
 scene.add(
