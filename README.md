@@ -207,10 +207,33 @@ A: The point light.
 ## Reflection Questions
 
 1. What is ambient lighting?
+
+A: Ambient light is a baseline light that illuminates every object in a scene equally.
+
 2. What is directional lighting?
+
+A: Directional lighting is light that eminates in all directions from a set point and lights every face of an object facing it.
+
 3. What is point lighting?
+
+A: Point lighting is light that eminates a certain distance from a set point and fades as it gets farther away from that point, resembling the light from a candle or lightbulb.
+
 4. Why do we need normals?
+
+A: Normals determine whether an object is in-facing or out-facing and therefore which parts of it should be affected by what light sources. 
+
 5. Why do some faces appear brighter?
+
+A: Some faces appear brighter because they are being lit by more light sources and/or are closer to the light sources than other faces.
+
 6. How does moving a light affect a scene?
+
+A: Moving a light changs what points of a scene are being lit by the light and with what intensity. 
+
 7. How does changing color affect realism?
+
+A: Brighter colors seen less in real life make the scene less realistic, while duller, more neutral colors make a scene seem more realistic.
+
 8. Why does Three.js make lighting easier than WebGL?
+
+A: Lighting is very important in 3D scenes, both in mood of a scene and making it properly visible, and Three.js makes light easier by letting you create light objects easily in the javascript files rather than having to alter the shader files.
