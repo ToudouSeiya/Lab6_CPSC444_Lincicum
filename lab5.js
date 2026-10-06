@@ -74,6 +74,7 @@ scene.add(
 camera.position.z = 3;
 
 let theta = 0;
+let lastTime = 0;
 
 // Animation Loop
 function animate()
@@ -86,12 +87,17 @@ function animate()
     cube.rotation.y += 0.02;
 
     theta += 1;
+    lastTime += 1;
 
-    let r = Math.abs(Math.sin(theta * 0.02));
-    let g = Math.abs(Math.sin(theta * 0.03));
-    let b = Math.abs(Math.sin(theta * 0.04));
+    if (lastTime >= 100){
+        let r = Math.random();
+        let g = Math.random();
+        let b = Math.random();
 
-    //directionalLight.color.setRGB(r, g, b);
+        directionalLight.color.setRGB(r, g, b);
+
+        lastTime = 0;
+    }
 
     renderer.render(
         scene,
